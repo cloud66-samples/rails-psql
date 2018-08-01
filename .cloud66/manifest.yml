@@ -1,12 +1,7 @@
 production:
-    rails:
-        configuration:
-            custom_log_files: ["/opt/nginx/logs/access.log"]
-    postgresql:
-        configuration:
-            version: 9.3.14
-    nginx:
-      configuration:
-        servers:
-          pelican:
-            passenger_pool_max: 5
+  rails:
+    configuration:
+      custom_log_files: ["/opt/nginx/logs/access.log"]
+  postgresql:
+    configuration:
+      version: 9.3.14
