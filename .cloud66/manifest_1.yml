@@ -1,26 +1,12 @@
 production:
-  rails:
-    configuration:
-      ruby_version: 2.3.7
-      asset_pipeline_precompile: true
-      vpc_id: vpc-7c066d05
-    servers:
-      server:
-        unique_name: app                
-        region: eu-central-1
-        size: t2.small
-        vendor: aws
-        key_name: test2
-        subnet_id: subnet-06a95c39
-  postgresql:
-    configuration:
-      version: 9.5.6
-      vpc_id: vpc-7c066d05
-    servers:
-      server:
-        unique_name: db                
-        region: eu-central-1
-        size: t2.small
-        vendor: aws
-        key_name: test2
-        subnet_id: subnet-06a95c39
+    rails:
+        configuration:
+            custom_log_files: ["/opt/nginx/logs/access.log"]
+    postgresql:
+        configuration:
+            version: 9.3.14
+    nginx:
+      configuration:
+        servers:
+          pelican:
+            passenger_pool_max: 5
