@@ -4,7 +4,6 @@ postgresql:
     postgis: false
     root_disk_size: 20
     root_disk_type: ssd
-    tamper_with_yml: true
 rails:
   configuration:
     ruby_version: 2.6.3
