@@ -1,7 +1,10 @@
-production:
-  rails:
-    configuration:
-      custom_log_files: ["/opt/nginx/logs/access.log"]
-  postgresql:
-    configuration:
-      version: 9.3.14
+postgresql:
+  configuration:
+    version: 11.5
+    postgis: false
+    root_disk_size: 20
+    root_disk_type: ssd
+    tamper_with_yml: true
+rails:
+  configuration:
+    ruby_version: 2.6.3
