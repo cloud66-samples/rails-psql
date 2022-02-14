@@ -2,6 +2,7 @@ production:
   rails:
     configuration:
       custom_log_files: ["/opt/nginx/logs/access.log"]
+      node_version: "10"
   postgresql:
     configuration:
       version: 9.3.14
